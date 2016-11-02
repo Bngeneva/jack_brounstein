@@ -92,7 +92,9 @@ Login and Registration **GitHub**|
 
 ### Monday, October 10
 
-Flask + MySQL + AJAX: Notes
+Morning: Work on the wall!
+
+Afternoon: Ajaxify the wall
 
 Assignments|
 ---|
