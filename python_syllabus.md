@@ -45,7 +45,7 @@ Ninja Gold **GitHub**|
 
 Flask Olympics
 
-Afternoon: Flask + AJAX: Pokédex
+Afternoon: Intro to (my)SQL
 
 Assignments|
 ---|
@@ -55,7 +55,7 @@ Disappearing Ninja **GitHub**|
 
 ### Thursday, October 6
 
-Intro to (my)SQL
+SQL Zoo
 
 Assignments|
 ---|
@@ -77,6 +77,8 @@ NoSQL Databases|
 ### Friday, October 7
 
 Flask and MySQL, together at last
+
+Afternoon: Login and Registration demo
 
 Assignments|
 ---|
