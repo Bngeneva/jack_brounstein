@@ -148,8 +148,8 @@ Intro to models (the "M" in MTV)
 Assignments|
 ---|
 Wall ERD|
-[Friendships 1](https://github.com/madjaqk/friends_orm)|
-*NB: Don't do 'Frienships continued' or 'World Database ORM' yet*|
+[Sports ORM 1: Simple finds](https://github.com/madjaqk/sports_orm)|
+*NB: This replaces 'Friendships', 'Frienships continued', and 'World Database ORM' yet*|
 Courses **GitHub**|
 E-mail Validation **GitHub**|
 
@@ -163,6 +163,7 @@ Afternoon: GitHub practice
 
 Assignments|
 ---|
+[Sports ORM 2: ForeignKey relationships](https://github.com/madjaqk/sports_orm)|
 Login and Registration **GitHub**|
 Multiple Apps **GitHub**|
 
@@ -172,7 +173,7 @@ Many-to-many relationships in Django
 
 Assignments|
 ---|
-Friendships 2|
+[Sports ORM 3: ManyToMany relationships](https://github.com/madjaqk/sports_orm)|
 Semi-Resful Routes **GitHub**|
 [Dojo Secrets](https://github.com/madjaqk/oct_2016_python/blob/master/dojo_secrets.html) **GitHub**|
 
