@@ -149,7 +149,7 @@ Assignments|
 ---|
 Wall ERD|
 [Sports ORM 1: Simple finds](https://github.com/madjaqk/sports_orm)|
-*NB: This replaces 'Friendships', 'Frienships continued', and 'World Database ORM' yet*|
+*NB: This replaces the 'Friendships', 'Frienships continued', and 'World Database ORM' assignments*|
 Courses **GitHub**|
 E-mail Validation **GitHub**|
 
