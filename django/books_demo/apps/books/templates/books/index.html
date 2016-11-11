@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1>Authors</h1>
+		<table>
+			<tr><th>ID</th>
+				<th>Name</th>
+				<th>Created At</th>
+				<th>Updated At</th>
+			</tr>
+{% for author in authors %}
+	<tr><td>{{author.id}}</td>
+		<td>{{author.name}}</td>
+		<td>{{author.created_at}}</td>
+		<td>{{author.updated_at}}</td>
+	</tr>
+{% endfor %}
+		</table>
+		<h3>New Author</h3>
+		<form action="{% url 'create_author' %}" method="POST">
+			{% csrf_token %}
+			<p>Name: <input type="text" name="name"></p>
+			<p><input type="submit" value="Create Author"></p>
+		</form>
+		<h1>Books</h1>
+		<table>
+			<tr><th>Title</th>
+				<th>Rating</th>
+				<th>Author</th>
+			</tr>
+{% for book in books %}
+	<tr><td>{{book.title}}</td>
+		<td>{{book.rating}}</td>
+		<td>{{book.author.name}}</td>
+	</tr>
+{% endfor %}
+		</table>
+		<form action="{% url 'create_book' %}" method="POST">
+			{% csrf_token %}
+			<p>Title: <input type="text" name="title"></p>
+			<p>Rating: <input type="number" name="rating"></p>
+			<p>Author: <select name="author">
+				{% for author in authors %}
+					<option value={{author.id}}>{{author.name}}</option>
+				{% endfor %}
+			</select></p>
+			<p><input type="submit" value="Create Book"></p>
+		</form>
+	</body>
+</html>
