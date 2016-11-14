@@ -175,7 +175,7 @@ Assignments|
 ---|
 [Sports ORM 3: ManyToMany relationships](https://github.com/madjaqk/sports_orm)|
 Semi-Resful Routes **GitHub**|
-[Dojo Secrets](https://github.com/madjaqk/oct_2016_python/blob/master/dojo_secrets.html) **GitHub**|
+[Dojo Secrets](dojo_secrets.md) **GitHub**|
 
 Optional|
 ---|
