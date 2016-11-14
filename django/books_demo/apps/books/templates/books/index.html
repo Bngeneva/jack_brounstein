@@ -4,6 +4,11 @@
 		<title></title>
 	</head>
 	<body>
+		{% if messages %}
+			{% for message in messages %}
+				<p>{{message}}</p>
+			{% endfor %}
+		{% endif %}
 		<h1>Authors</h1>
 		<table>
 			<tr><th>ID</th>

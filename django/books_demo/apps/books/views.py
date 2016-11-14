@@ -1,19 +1,24 @@
 from django.shortcuts import render, redirect
+from django.contrib import messages
 from .models import Author, Book
 
 # Create your views here.
 def index(request):
-	stephen_king = Author.objects.get(name="Stephen King")
 	context = {
 		"authors": Author.objects.all(),
-		"books": stephen_king.books.exclude(rating__lte=5),
+		"books": Book.objects.all(),
 	}
+
 	return render(request, "books/index.html", context)
 
 def create_author(request):
-	new_author = Author()
-	new_author.name = request.POST["name"]
-	new_author.save()
+	res = Author.objects.add_author(request.POST)
+
+	if res["added"]:
+		messages.success(request, "Added author {}".format(res["new_author"].name))
+	else:
+		for error in res["errors"]:
+			messages.error(request, error)
 
 	return redirect("index")
 
