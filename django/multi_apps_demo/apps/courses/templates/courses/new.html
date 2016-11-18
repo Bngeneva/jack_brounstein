@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New Course</title>
+	</head>
+	<body>
+		<h1>New Course</h1>
+		<form action="{% url 'courses:create' %}" method="POST">
+			{% csrf_token %}
+			<p>Course name: <input type="text" name="name"></p>
+			<p>Description:</p>
+			<textarea rows="4" cols="40" name="description"></textarea>
+			<p><input type="submit" value="Create Course"></p>
+		</form>
+	</body>
+</html>

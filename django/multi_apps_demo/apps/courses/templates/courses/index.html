@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Courses</title>
+	</head>
+	<body>
+		<h1>Courses</h1>
+		<table>
+			<tr><th>ID</th>
+				<th>Course Name</th>
+				<th>Course Description</th>
+				<th>Date Added</th>
+				<th>Number of Students</th>
+				<th>Actions</th>
+			</tr>
+			{% for course in courses %}
+				<tr>
+					<td>{{course.id}}</td>
+					<td><a href="{% url 'courses:show' course.id %}">{{course.name}}</a></td>
+					<td>{{course.description}}</td>
+					<td>{{course.created_at}}</td>
+					<td>{{course.users.count}}</td>
+					<td><form action="{% url 'courses:destroy' %}" method="POST">{% csrf_token %}<input type="hidden" name="course_id" value="{{course.id}}"><input type="submit" value="DELETE"></form></td>
+				</tr>
+			{% endfor %}
+		</table>
+		<p><a href="{% url 'courses:new' %}">Create a course</a></p>
+		<p><a href="{% url 'courses:add_student_page' %}">Add students to courses</a></p>
+	</body>
+</html>
